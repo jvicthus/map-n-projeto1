@@ -16,8 +16,12 @@ public class MAPNProjeto1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello World!");
-        System.out.println(":D");
+        Cliente c = new Cliente();
+
+        c.setNome("Allyson");
+        c.setEmail("allysonjeronimo@gmail.com");
+        
+        System.out.println(c.toString());
     }
     
 }
