@@ -5,6 +5,9 @@
  */
 package map.n.projeto1;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author Allyson
@@ -15,6 +18,7 @@ public class Cliente{
     private String cpf;
     private String email;
     private String endereco;
+    private Date dataNascimento;
 
     public String getNome() {
         return nome;
@@ -47,11 +51,25 @@ public class Cliente{
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    
+    
     
     public String toString(){ 
         StringBuilder sb = new StringBuilder();
        
-        sb.append(nome).append(" - ").append(email);
+        sb.append(nome)
+                .append(" - ")
+                .append(cpf)
+                .append(" - ")
+                .append(DateUtil.dateToString(dataNascimento));
         
         return sb.toString();
     }
