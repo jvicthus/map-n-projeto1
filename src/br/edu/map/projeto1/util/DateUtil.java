@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package map.n.projeto1;
+package br.edu.map.projeto1.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

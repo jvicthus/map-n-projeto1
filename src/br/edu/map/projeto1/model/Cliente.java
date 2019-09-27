@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package map.n.projeto1;
+package br.edu.map.projeto1.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import br.edu.map.projeto1.util.DateUtil;
 
 /**
  *
